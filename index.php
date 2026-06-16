@@ -8,10 +8,19 @@
 <body>
     <?php 
 
-        echo 'hello';
-
-        
+        //echo 'hello';
+        /*
+        multi-line comment
+        */
+        $age  = 10;
+        $amount = 19.99;
+        $first_name = "Musa";
+        $is_admin = true;
+        //echo 'Hi' . ' ' . $first_name
+        echo "Hi $first_name";
+    
      
     ?>
+    
 </body>
 </html>
