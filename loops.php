@@ -4,16 +4,16 @@
     for ( $i = 1; $i <= 5; $i++){
         //echo $i;
     }
-    // while
+    //  while
     $i = 1;
     while( $i <= 5 ) {
-        //echo $i;
+        // echo $i;
         $i++;
     }
     // foreach
-$fruits = ['banana', 'apple', 'orange'];
+ $fruits = ['banana', 'apple', 'orange'];
     foreach ( $fruits as $fruit) {
-       // echo $fruit . ' ';
+        echo $fruit . ' ';
     }
     $arr_1 = [1, 'Musa'];
     $arr_2 = ['John'];
