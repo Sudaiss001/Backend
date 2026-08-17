@@ -15,12 +15,24 @@
 
         function fetchSingle($sql, $data = []){
             $query = $this->con->prepare($sql);
-            $query->execute([$data]);
+            $query->execute( $data );
             return $query->fetch(PDO::FETCH_ASSOC);
         }
 
-        //fetchMultiple
-        //$dt = [];
+      function fetchMultiple( $sql, $data = [] )
+		{ 
+			$query = $this->con->prepare( $sql );
+			$query->execute( $data );
+			$dt = [];
+
+	    	// looping through records
+			while ( $row = $query->fetch( PDO::FETCH_ASSOC ) )
+			{
+				array_push( $dt, $row );
+			}
+
+			return $dt;
+		}
 
     }
  
