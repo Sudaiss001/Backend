@@ -1,7 +1,10 @@
 <?php
     include_once("User.php");
-    //
+
     $user = new User();
-    $id = 1;
-    $res = $user->getUser($id);
+    $res = $user->allUser();
+
+    echo "<pre>";
     var_dump($res);
+    echo "</pre>";
+?>
