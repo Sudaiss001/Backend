@@ -13,13 +13,21 @@
             return $this->con;
         }
 
+        function runQuery( $sql, $data = [] )
+		{
+			$query = $this->con->prepare( $sql );
+			$row = $query->execute( $data );
+
+			return $row ? true : false;
+		}
+
         function fetchSingle($sql, $data = []){
             $query = $this->con->prepare($sql);
             $query->execute( $data );
             return $query->fetch(PDO::FETCH_ASSOC);
         }
 
-      function fetchMultiple( $sql, $data = [] )
+        function fetchMultiple( $sql, $data = [] )
 		{ 
 			$query = $this->con->prepare( $sql );
 			$query->execute( $data );
@@ -33,6 +41,7 @@
 
 			return $dt;
 		}
+
 
     }
  

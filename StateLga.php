@@ -17,21 +17,21 @@
         }
 
         // Fetch single state by ID
-        public function getStateById($id) {
+        public function getStateById(array $dt ) {
             $sql = "SELECT * FROM states WHERE id = ?";
-            return $this->fetchSingle($sql, [$id]);
+            return $this->fetchSingle($sql, $dt );
         }
 
         // Fetch single LGA by ID
-        public function getLGAById($id) {
+        public function getLGAById( array $dt ) {
             $sql = "SELECT * FROM lgas WHERE id = ?";
-            return $this->fetchSingle($sql, [$id]);
+            return $this->fetchSingle( $sql, $dt );
         }
 
         // Fetch all LGAs belonging to a specific state ID
-        public function getLGAsByStateId($stateId) {
+        public function getLGAsByStateId( array $dt ) {
             $sql = "SELECT * FROM lgas WHERE state_id = ?";
-            return $this->fetchMultiple($sql, [$stateId]);
+            return $this->fetchMultiple( $sql, $dt );
         }
     }
 ?>

@@ -19,7 +19,7 @@
     var_dump($states);
     echo "</pre>";
 
-    $lgas = $stateLga->getLGAsByStateId(1);
+    $lgas = $stateLga->getLGAsByStateId([1]);
     echo "<h3>LGAs for State ID 1</h3>";
     echo "<pre>";
     var_dump($lgas);

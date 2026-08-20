@@ -16,5 +16,7 @@
             $res = $this->fetchMultiple($sql);
             return $res;
         }
+        // TODO
+        // addNew, updateById, deleteById
     }
 ?>
