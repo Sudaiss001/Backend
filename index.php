@@ -9,16 +9,16 @@
    
    //App functions
    include_once( 'config.php' );
-   include_once( 'models/WebApp.php' );
+   include_once( 'models/Utils.php' );
    //Creating App instances
-   $web_app = new WebApp();
+   $utils = new Utils();
 
    //url
    $server_name = 'http://' . $_SERVER['SERVER_NAME'];
    $uri = $_SERVER['REQUEST_URI'];
    $main_url = $server_name;
    $app_url = "$server_name$uri/";
-
+  
    //page name logic
    $uri_arr = explode( '/', $uri );
    $uri_len =  count( $uri_arr );
@@ -27,7 +27,7 @@
 
    $page_arr = explode( '?', $uri_arr[ $page_starts ] );
    $page = $page_arr[0];
-   $page = $web_app->fixUrl( $page );
+   $page = $utils->fixUrl( $page );
 
    //setting home as default
    if ( !$page ) 
@@ -36,6 +36,8 @@
    }
    
    //
+   include_once( 'views/header.php' );
+   
 
    //directory
    $root_dir = dirname( __DIR__ );
@@ -57,5 +59,6 @@
 
    // 
    
+   include_once( 'views/footer.php' );
    ob_end_flush();
 ?>

@@ -1,6 +1,6 @@
 <?php
 
-   class WebApp
+   class Utils
    {
       function fixUrl( $page )
       {
