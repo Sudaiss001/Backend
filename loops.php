@@ -20,4 +20,4 @@
     $res = array_merge($arr_1, $arr_2);
     //var_dump($res);
     array_push($arr_1, 'apple');
-    var_dump(Count($arr_1);
+    var_dump(count($arr_1));
