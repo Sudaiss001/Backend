@@ -1,3 +1,4 @@
 <?php
-//home interface
+
+// Apply interface
 include_once ( 'views/home.php' );

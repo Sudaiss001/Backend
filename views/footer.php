@@ -1,4 +1,6 @@
-<footer id="footer">
+ <!-- Footer
+  ============================================= -->
+  <footer id="footer">
     <div class="container">
       <div class="row">
         <div class="col-lg d-lg-flex align-items-center">
@@ -66,5 +68,6 @@
 <script src="<?= $server_name ?>/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script> 
 <script src="<?= $server_name ?>/assets/vendor/owl.carousel/owl.carousel.min.js"></script> 
 <script src="<?= $server_name ?>/assets/js/theme.js"></script>
+
 </body>
 </html>

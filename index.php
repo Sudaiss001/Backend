@@ -18,7 +18,13 @@
    $uri = $_SERVER['REQUEST_URI'];
    $main_url = $server_name;
    $app_url = "$server_name$uri/";
-  
+
+   
+   if ( $_SERVER['SERVER_NAME'] === 'localhost' )
+   {
+      $server_name = "$server_name/Backend";
+   }
+
    //page name logic
    $uri_arr = explode( '/', $uri );
    $uri_len =  count( $uri_arr );

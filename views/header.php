@@ -15,10 +15,10 @@
 
 <!-- Stylesheet
 ============================================= -->
-<link rel="stylesheet" type="text/css" href="<?= $server_name ?>assets/vendor/bootstrap/css/bootstrap.min.css" />
-<link rel="stylesheet" type="text/css" href="<?= $server_name ?>assets/vendor/font-awesome/css/all.min.css" />
-<link rel="stylesheet" type="text/css" href="<?= $server_name ?>assets/vendor/owl.carousel/assets/owl.carousel.min.css" />
-<link rel="stylesheet" type="text/css" href="<?= $server_name ?>assets/css/stylesheet.css" />
+<link rel="stylesheet" type="text/css" href="<?= $server_name ?>/assets/vendor/bootstrap/css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="<?= $server_name ?>/assets/vendor/font-awesome/css/all.min.css" />
+<link rel="stylesheet" type="text/css" href="<?= $server_name ?>/assets/vendor/owl.carousel/assets/owl.carousel.min.css" />
+<link rel="stylesheet" type="text/css" href="<?= $server_name ?>/assets/css/stylesheet.css" />
 </head>
 <body>
 
@@ -222,41 +222,41 @@
     </div>
   </header>
   <!-- Header End --> 
-   <footer id="footer">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg d-lg-flex align-items-center">
-          <ul class="nav justify-content-center justify-content-lg-start text-3">
-            <li class="nav-item"> <a class="nav-link active" href="#">About Us</a></li>
-            <li class="nav-item"> <a class="nav-link" href="#">Support</a></li>
-            <li class="nav-item"> <a class="nav-link" href="#">Help</a></li>
-            <li class="nav-item"> <a class="nav-link" href="#">Careers</a></li>
-            <li class="nav-item"> <a class="nav-link" href="#">Affiliate</a></li>
-            <li class="nav-item"> <a class="nav-link" href="#">Fees</a></li>
-          </ul>
-        </div>
-        <div class="col-lg d-lg-flex justify-content-lg-end mt-3 mt-lg-0">
-          <ul class="social-icons justify-content-center">
-            <li class="social-icons-facebook"><a data-bs-toggle="tooltip" href="http://www.facebook.com/" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
-            <li class="social-icons-twitter"><a data-bs-toggle="tooltip" href="http://www.twitter.com/" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a></li>
-            <li class="social-icons-google"><a data-bs-toggle="tooltip" href="http://www.google.com/" target="_blank" title="Google"><i class="fab fa-google"></i></a></li>
-            <li class="social-icons-youtube"><a data-bs-toggle="tooltip" href="http://www.youtube.com/" target="_blank" title="Youtube"><i class="fab fa-youtube"></i></a></li>
-          </ul>
-        </div>
+  
+  <!-- Content
+  ============================================= -->
+  <div id="content"> 
+    
+    <!-- Slideshow
+    ============================================= -->
+	<div class="owl-carousel owl-theme single-slideshow" data-autoplay="true" data-loop="true" data-autoheight="true" data-nav="true" data-items="1">
+      <div class="item">
+        <section class="hero-wrap">
+          <div class="hero-mask opacity-7 bg-dark"></div>
+          <div class="hero-bg" style="background-image:url('images/bg/image-1.jpg');"></div>
+          <div class="hero-content d-flex fullscreen-with-header py-5">
+            <div class="container my-auto text-center">
+              <h2 class="text-16 text-white">Send & Receive Money</h2>
+              <p class="text-5 text-white mb-4">Quickly and easily send, receive and request money online with Payyed.<br class="d-none d-lg-block">
+                Over 180 countries and 120 currencies supported.</p>
+              <a href="#" class="btn btn-primary m-2">Open a Free Account</a> <a class="btn btn-outline-light video-btn m-2" href="#" data-src="https://www.youtube.com/embed/7e90gBu4pas" data-bs-toggle="modal" data-bs-target="#videoModal"><span class="text-2 me-3"><i class="fas fa-play"></i></span>See How it Works</a> </div>
+          </div>
+        </section>
       </div>
-      <div class="footer-copyright pt-3 pt-lg-2 mt-2">
-        <div class="row">
-          <div class="col-lg">
-            <p class="text-center text-lg-start mb-2 mb-lg-0">Copyright &copy; 2022 <a href="#">Payyed</a>. All Rights Reserved.</p>
+      <div class="item">
+        <section class="hero-wrap">
+          <div class="hero-bg" style="background-image:url('images/bg/image-3.jpg');"></div>
+          <div class="hero-content d-flex fullscreen-with-header py-5">
+            <div class="container my-auto">
+              <div class="row">
+                <div class="col-12 col-lg-8 col-xl-7 text-center text-lg-start">
+                  <h2 class="text-13 text-white">Trusted by more than 50,000 businesses worldwide.</h2>
+                  <p class="text-5 text-white mb-4">Over 180 countries and 120 currencies supported.</p>
+                  <a href="#" class="btn btn-primary me-3">Get started for free</a> <a class="btn btn-link text-light video-btn" href="#" data-src="https://www.youtube.com/embed/7e90gBu4pas" data-bs-toggle="modal" data-bs-target="#videoModal"><span class="me-2"><i class="fas fa-play-circle"></i></span>Watch Demo</a> </div>
+              </div>
+            </div>
           </div>
-          <div class="col-lg d-lg-flex align-items-center justify-content-lg-end">
-            <ul class="nav justify-content-center">
-              <li class="nav-item"> <a class="nav-link active" href="#">Security</a></li>
-              <li class="nav-item"> <a class="nav-link" href="#">Terms</a></li>
-              <li class="nav-item"> <a class="nav-link" href="#">Privacy</a></li>
-            </ul>
-          </div>
-        </div>
+        </section>
       </div>
     </div>
- 
+    <!-- Slideshow end --> 

@@ -17,16 +17,7 @@
    const MAIL_SERVER_EMAIL = '';
    const MAIL_SERVER_PWORD = '';
 	
-
-	$req_method = $_SERVER['REQUEST_METHOD'];
-
-
-	//url
-   $server_name = ENVIRONMENT == 'Test' ? 'http://' : 'https://';
-   $server_name .= $_SERVER['SERVER_NAME'];
-   $uri = $_SERVER['REQUEST_URI'];
-   $app_url = ( strlen( $uri ) > 1 ) ? "$server_name$uri" : "$server_name";
-   
+	
    //directory
    $root_dir = dirname( __DIR__ );
    $cur_dir = dirname( __FILE__ );
