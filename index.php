@@ -22,7 +22,7 @@
    
    if ( $_SERVER['SERVER_NAME'] === 'localhost' )
    {
-      $server_name = "$server_name/Backend";
+      $server_name = "$server_name/Abdul";
    }
 
    //page name logic
