@@ -5,6 +5,7 @@
             <div class="col-11 col-lg-9 col-xl-8 mx-auto">
               <h3 class="fw-400 mb-4">Sign Up</h3>
               <form id="loginForm" method="post">
+                <?= $web_app->showAlert( $msg ) ?>
                 <div class="mb-3">
                   <label for="fullName" class="form-label">Full Name</label>
                   <input type="text" class="form-control" id="fullName" required placeholder="Enter Your Name">
