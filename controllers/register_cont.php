@@ -11,12 +11,12 @@
 
 		// Getting user inputs
 		$first_name = strtoupper( $_POST['first_name'] );
-		$middle_name = strtoupper( $_POST['middle_name'] );
 		$last_name = strtoupper( $_POST['last_name'] );
 		$full_name = "$first_name $middle_name $last_name";
 		$gender = $_POST['gender'];
 		$email = $_POST['email'];
-		$phone_no = $_POST['phone_no'];
+		$amount = $_POST['amount'];
+		$age = $_POST['age'];
 		$enc_pword = $app->encPword( $pword );
 
 		// Validating inputs

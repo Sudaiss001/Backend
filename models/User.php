@@ -20,5 +20,12 @@
 	 		$this->table = DB_TABLE_USER;
 	 	}
 
-		
+		public function getByEmail($email)
+		{
+			$query = $this->db->prepare("SELECT * FROM {$this->table} WHERE email = ? LIMIT 1");
+			
+			$query->execute([$email]);
+
+			return $query->fetch(PDO::FETCH_ASSOC);
+		}
 	}
